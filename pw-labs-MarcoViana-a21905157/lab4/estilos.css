@@ -1,0 +1,52 @@
+table {
+    background-color: rgb(248, 248, 248);
+    border: 1px solid black;
+}
+
+th, td {
+    border: 1px solid black;
+}
+
+tr:nth-child(even) {background: #CCC}
+tr:nth-child(odd) {background: #FFF}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color:bisque;
+}
+
+a:link {
+    color:rgb(133, 72, 30);
+}
+
+a:visited {
+    color:chocolate;
+}
+
+a:hover {
+    color:rgb(255, 51, 0);
+}
+
+a:active {
+    color:black;
+}
+
+.menu-selected {
+    font-weight: bold;
+}
+
+.text-descriptive::first-line {
+    font-weight: bold;
+}
+
+.text-descriptive::first-letter {
+    font-size: x-large;
+}
+
+fieldset.question {
+    display: block;
+}
+
+img, iframe {
+    border: 2px solid chocolate;
+}
