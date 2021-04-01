@@ -1,0 +1,129 @@
+table {
+    background-color: rgb(248, 248, 248);
+    border: 1px solid black;
+}
+
+th, td {
+    border: 1px solid black;
+}
+
+tr:nth-child(even) {background: #CCC}
+tr:nth-child(odd) {background: #FFF}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color:bisque;
+    display: grid;
+    grid-template-columns: 320px auto;
+    grid-gap: 25px;
+    padding: 0px;
+    margin: 0px;
+}
+
+a:link {
+    color:rgb(133, 72, 30);
+}
+
+a:visited {
+    color:chocolate;
+}
+
+a:hover {
+    color:rgb(255, 51, 0);
+}
+
+a:active {
+    color:black;
+}
+
+.menu-selected {
+    font-weight: bold;
+}
+
+.text-descriptive::first-line {
+    font-weight: bold;
+}
+
+.text-descriptive::first-letter {
+    font-size: x-large;
+}
+
+fieldset.question {
+    display: block;
+}
+
+img, iframe {
+    border: 2px solid chocolate;
+}
+
+.nav-group1 {
+    box-flex-group: 1;
+}
+
+.nav-group2 {
+    box-flex-group: 2;
+}
+
+.nav-group3 {
+    box-flex-group: 3;
+}
+
+main, aside {
+    background-color: white;
+    border-radius: 25px;
+    padding: 20px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+header {
+    width: auto;
+    height: 300px;
+    background-position-y: -430px;
+    background-image: url("images/new_delhi_sunset.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+    padding: 25px;
+    color: white;
+    
+}
+
+header, nav {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav > a {
+    text-decoration: none;
+}
+
+aside {
+    text-align: center;
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+
+main {
+	grid-column-start: 2;
+	grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+footer {
+    grid-column-start: 1;
+	grid-column-end: 3;
+    text-align: center;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
